@@ -1,0 +1,40 @@
+OPENING A PULL REQUEST
+======================
+1. Create a new branch from main/master
+    git checkout -b feature-branch-name
+
+2. Make your changes and commit them
+    git add .
+    git commit -m "Describe your changes"
+
+3. Push your branch to the remote repository
+    git push origin feature-branch-name
+
+4. Go to your repository on GitHub/GitLab
+    - Click "Compare & pull request"
+    - Add title and description
+    - Select base branch (main) and compare branch (your feature branch)
+    - Click "Create pull request"
+
+MERGING A PULL REQUEST
+======================
+1. Review the changes and comments
+
+2. Resolve any merge conflicts if they exist
+    - Manually edit conflicting files
+    - Mark as resolved
+    - Commit changes
+
+3. Approve the pull request (if you have permission)
+
+4. Click "Merge pull request" button
+
+5. Choose merge strategy:
+    - Create a merge commit (default)
+    - Squash and merge (combine commits)
+    - Rebase and merge (linear history)
+
+6. Confirm the merge and delete the branch if desired
+
+7. Pull the latest changes locally
+    git pull origin main
